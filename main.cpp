@@ -10,7 +10,7 @@ using namespace std;
 
 int main(int argc, char *argv[]) {
 
-	string isAll = "-all";
+    string isAll = "-all";
 
     int casesCounter = 0;
     int numCases;
@@ -30,8 +30,8 @@ int main(int argc, char *argv[]) {
     		    	
     	}
     	if (count == 1) {
-    		numCases = stoi(num);
-    		continue;
+	  numCases = stoi(num);
+    	  continue;
     	}
     	if (count > 2) {
     			continue;
