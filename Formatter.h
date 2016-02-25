@@ -89,6 +89,28 @@ public:
 
 	void LCSall() {
 
+		int aLength = a.length();
+		int bLength = b.length();
+		int X[aLength + 1][bLength + 1];
+
+		for(int q = 0; q <= aLength; q++) {
+			X[q][0] = 0;
+		}
+		for(int w = 0; w <= bLength; w++) {
+			X[0][w] = 0;
+		}
+		for(int i = 1; i <= aLength; i++) {
+			for(int j = 1; j <= bLength; j++) {
+			
+				if(a[i - 1] == b[j - 1]) {
+					X[i][j] = X[i - 1][j - 1] + 1;
+				}
+				else {
+					X[i][j] = max(X[i - 1][j] , X[i][j - 1]);
+				}
+			}
+		}
+
 	}
 
 
