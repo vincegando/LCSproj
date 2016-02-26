@@ -1,4 +1,6 @@
 #include <string>
+#include <vector>
+#include "IndexPair.h"
 using namespace std;
 
 #ifndef Formatter_h
@@ -13,7 +15,10 @@ private:
 	//string subseq;
 	string a;
 	string b;
+	
 public:
+	vector<IndexPair> tuples;
+
 	Formatter(string _a, string _b) {
 		a = _a;
 		b = _b;
@@ -110,6 +115,8 @@ public:
 				}
 			}
 		}
+
+		
 
 	}
 

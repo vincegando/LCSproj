@@ -17,10 +17,10 @@ public:
         second = _second;
     }
 
-    void setFirst(string in) {
+    void setFirst(int in) {
         first = in;
     }
-    void setSecond(string in) {
+    void setSecond(int in) {
         second = in;
     }
     int getFirst() {
@@ -29,7 +29,9 @@ public:
     int getSecond() {
         return second;
     }
-    
+    void printOut() {
+        cout << "<" << first << ", " << second << ">";
+    }
 
 };
 
