@@ -4,6 +4,7 @@ using namespace std;
 #ifndef IndexPair_h
 #define IndexPair_h
 
+//class to hold and print out pairs of indices
 class IndexPair {
 
 private:
