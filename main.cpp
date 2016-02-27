@@ -30,8 +30,8 @@ int main(int argc, char *argv[]) {
     		    	
     	}
     	if (count == 1) {
-	  numCases = stoi(num);
-    	  continue;
+	       numCases = stoi(num);
+    	   continue;
     	}
     	if (count > 2) {
     			continue;

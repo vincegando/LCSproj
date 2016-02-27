@@ -76,9 +76,10 @@ public:
 		while(aLength > 0 && bLength > 0) {
 			if(a[aLength - 1] == b[bLength - 1]) {
 				res[copy - 1] = a[aLength - 1];
+				copy--;
 				aLength--;
 				bLength--;
-				copy--;
+		
 			}
 			else if(X[aLength - 1][bLength] > X[aLength][bLength - 1]) {
 				aLength--;
@@ -87,7 +88,7 @@ public:
 				bLength--;
 			}
 		}
-
+		
 		cout << lcsLength << " " << res << endl;
 
 	}
